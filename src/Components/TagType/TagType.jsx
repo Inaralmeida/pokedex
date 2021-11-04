@@ -7,7 +7,6 @@ const Tag = styled.div`
     height: 30px;
     text-align: center;
     padding: 5px;
-
     color: white;
     font-weight: bold;
     background-color: ${(p) => p.color.color};

@@ -15,9 +15,7 @@ const Pokemon = ({ pokemon }) => {
 
     const requestPokemon = () => {
         setLoad(true)
-        if(pokemon !== null){
-
-
+        if (pokemon !== null) {
             api.get(`/pokemon/${pokemon}`)
                 .then((res) => {
                     const data = res.data

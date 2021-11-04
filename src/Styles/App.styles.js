@@ -8,7 +8,6 @@ export const Container = styled.div`
   align-items: center;
   justify-content: space-around;
   background-color: ${Theme.white};
-
   & .pokemon {
     width: 60%;
     height: 90%;
@@ -17,7 +16,6 @@ export const Container = styled.div`
     align-items: center;
     justify-content: center;
   }
-
   & .pokedex{
     width: 30%;
     height: 80%;
@@ -26,6 +24,4 @@ export const Container = styled.div`
     align-items: center;
     justify-content: center;
   }
-
-  
 `;

@@ -1,21 +1,17 @@
 import styled from "styled-components";
 import { Theme } from "../../Styles/Theme";
 
-
-
 export const Pokedex = styled.div`
-width: 350px;
-    height: auto;
-    /* height: ${(p) => (p.pokedexAberta ? "90%" : "310px")}; */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    border-radius: 15px;
-    position: absolute;
+  width: 350px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 15px;
+  position: absolute;
 
-
-    & .bottom,
+  & .bottom,
   & .top {
     width: 370px;
     height: 150px;
@@ -25,7 +21,7 @@ width: 350px;
           ? "heigthBorderPokedexOpen"
           : "heigthBorderPokedexClose"}
       2s forwards;
-      z-index: 2;
+    z-index: 2;
   }
 
   & .top {
@@ -62,7 +58,8 @@ width: 350px;
       opacity: 3px;
     }
     z-index: 3;
-    animation: ${(p) => (p.pokedexAberta ? "upButton" : "downButton")} 2s forwards;
+    animation: ${(p) => (p.pokedexAberta ? "upButton" : "downButton")} 2s
+      forwards;
   }
 
   & .vidro {
@@ -129,73 +126,70 @@ width: 350px;
       width: 79px;
     }
     100% {
-        top: 85px;
+      top: 85px;
       width: 130px;
     }
   }
-
-`
+`;
 
 export const Content = styled.div`
-width: 100%;
-height: 100%;
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: space-between;
-
- > header{
-   width: 100%;
-   padding: 10px;
-   height: 50px;
-   margin-top: 40px;
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   > input{
-     width: 83%;
-     height: 30px;
-     padding-left: 10px;
-     border-radius: 5px;
-     border: none;
-   }
-
-   > .icon{
-     font-size: 20px;
-     margin-left: 10px;
-     cursor: pointer;
-     color: ${Theme.red};
-   }
- }
-
- & .pokes{
-  width: 90%;
-  height: 70%;
-  overflow-y: auto;
+  width: 100%;
+  height: 100%;
   display: flex;
-  flex-wrap: wrap;
-  padding-left: 10px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
 
-  > div{
-    width: 30%;
+  > header {
+    width: 100%;
+    padding: 10px;
+    height: 50px;
+    margin-top: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 5px 5px 3px 3px;
-    border: 1px solid ${Theme.blue};
-    border-radius: 5px;
-    padding: 5px;
-    transition: all .7s;
-    :hover{
-      background-color: ${Theme.darkBlue};
+    > input {
+      width: 83%;
+      height: 30px;
+      padding-left: 10px;
+      border-radius: 5px;
+      border: none;
     }
 
-    > img{
-      width: 70%!important;
+    > .icon {
+      font-size: 20px;
+      margin-left: 10px;
       cursor: pointer;
+      color: ${Theme.red};
     }
   }
- }
-  
 
-`
+  & .pokes {
+    width: 90%;
+    height: 85%;
+    overflow-y: auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 10px;
+
+    > div {
+      width: 30%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 5px 5px 3px 3px;
+      border: 1px solid ${Theme.blue};
+      border-radius: 5px;
+      padding: 5px;
+      transition: all 0.7s;
+      :hover {
+        background-color: ${Theme.darkBlue};
+      }
+
+      > img {
+        width: 70% !important;
+        cursor: pointer;
+      }
+    }
+  }
+`;

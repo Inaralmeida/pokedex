@@ -35,26 +35,26 @@ export const Content = styled.div`
 
   > h2 {
     font-size: 36px;
-    text-transform: uppercase; 
+    text-transform: uppercase;
     color: ${(p) => p.color.color};
     letter-spacing: 1px;
   }
 
-  & .static{
+  & .static {
     width: 100%;
     height: 50px;
     display: flex;
     align-items: top;
     justify-content: space-around;
 
-    > div{
+    > div {
       height: 100%;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: space-between;
 
-      > span{
+      > span {
         display: flex;
         align-items: center;
         justify-content: space-around;
